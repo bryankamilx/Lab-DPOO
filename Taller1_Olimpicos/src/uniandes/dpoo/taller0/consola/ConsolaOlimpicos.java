@@ -108,18 +108,20 @@ public class ConsolaOlimpicos
 		System.out.println("14. Salir de la aplicación\n");
 	}
 
-	/**
-	 * Le muestra el usuario el porcentaje de atletas que son medallistas
-	 */
-	
 	private void ejecutarBuscarPaisAtleta()
 	{
 		System.out.println("\n" + "País representado por el atleta" + "\n");
 		String nombreAtleta = input("Por favor ingrese el nombre del atleta: ");
-		String nombrePais = calculadora.buscarPaisAtleta(nombreAtleta);
-		System.out.println("El país representado por el atleta es " + nombrePais);
+		String elAtleta = calculadora.buscarPaisAtleta(nombreAtleta);
+		System.out.println("El país representado por el atleta es " + elAtleta);
 	
 	}
+	
+	/**
+	 * Le muestra el usuario el porcentaje de atletas que son medallistas
+	 */
+	
+
 	
 	private void ejecutarPorcentajeMedallistas()
 	{

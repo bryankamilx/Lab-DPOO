@@ -68,6 +68,19 @@ public class CalculadoraEstadisticas
 	// ************************************************************************
 
 	/**
+	 * Busca el país del atleta ingresado como parámetro).
+	 * 
+	 */
+	public String buscarPaisAtleta(String nombreAtleta)
+	{
+
+		String atleta = buscarAtleta(nombreAtleta).darPais().darNombre();
+		
+		
+		return atleta;
+	}
+	
+	/**
 	 * Calcula cuáles fueron los atletas que participaron en cada evento para el año
 	 * indicado
 	 * 
@@ -375,16 +388,6 @@ public class CalculadoraEstadisticas
 		return resultado;
 	}
 	
-	/**
-	 * Busca el país del atleta ingresado como parámetro).
-	 * 
-	 */
-	public String buscarPaisAtleta(String nombreAtleta)
-	{
-
-		String paisAtleta = nombreAtleta.darPais();
-		return paisAtleta;
-	}
 
 	/**
 	 * Calcula qué porcentaje de los atletas ha sido medallista (ha ganado al menos
